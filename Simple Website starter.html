@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logos Church</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #3b2f2f;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(90deg, #b8860b, #8b7500);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      font-family: Clarendon, 'Merriweather', serif;
+      font-size: 2.5em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .logo-img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+      transform: scale(1.2);
+      margin-right: 25px;
+      border: 2px solid white;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Clarendon, 'Merriweather', serif;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fffacd;
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('images/church-bg.jpg') center/cover no-repeat, #fffbe6;
+      text-align: center;
+      padding: 100px 20px;
+      color: #3b2f2f;
+    }
+    .hero h1 {
+      font-size: 3.2em;
+      font-family: Clarendon, 'Merriweather', serif;
+      margin-bottom: 15px;
+      color: #8b7500;
+    }
+    .hero p {
+      font-size: 1.3em;
+      color: #3b2f2f;
+    }
+
+    /* Content wrapper with watermark */
+    .content-with-logo {
+      position: relative;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .content-with-logo::before {
+      content: "";
+      background: url("images/logo.png") no-repeat center top;
+      background-size: 1700px;
+      opacity: 0.1;
+      position: absolute;
+      top: -150px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section:nth-child(even) {
+      background: #fffdf3;
+    }
+
+    h2 {
+      font-family: Clarendon, 'Merriweather', serif;
+      color: #8b7500;
+      margin-bottom: 20px;
+      border-left: 6px solid #b8860b;
+      padding-left: 12px;
+    }
+
+    /* Ministries Grid */
+    .ministries {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .ministry {
+      background: #fff;
+      border: 2px solid #b8860b;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease;
+    }
+
+    .ministry:hover {
+      transform: translateY(-7px);
+    }
+
+    .ministry img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
+    /* Contact Info */
+    #contact p {
+      margin: 5px 0;
+    }
+
+    /* Links in Media Section */
+    #media a {
+      color: #8b7500;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    #media a:hover {
+      text-decoration: underline;
+      color: #b8860b;
+    }
+
+    /* Footer */
+    footer {
+      background: #3b2f2f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.95em;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="images/logo.png" alt="Logos Church Logo" class="logo-img">
+    <span>LOGOS CHURCH</span>
+  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#ministries">Ministries</a>
+    <a href="#media">Media</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Welcome to Logos Church</h1>
+  <p>A Christ-centered community of faith, worship, and service</p>
+</div>
+
+<!-- Content with watermark -->
+<div class="content-with-logo">
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Logos Church is a non-denominational Presbyterian church. We believe and confess that Jesus is the Christ, the Son of the Living God, who died for our sins and rose again to give us eternal life. By grace alone, through Christ alone, we are saved—rescued from the power of sin, Satan, and separation from God. We hold firmly to the authority of God’s Word, the Bible, as our final standard of faith and life.</p>
+
+    <p>As a Presbyterian church, we value both sound doctrine and a living faith that is expressed through worship, prayer, discipleship, and service. Our desire is to glorify God by loving Him with all our heart, soul, mind, and strength, and by loving our neighbors as ourselves. We exist to proclaim the gospel, build up believers, and make disciples of Jesus Christ both locally and globally.</p>
+
+    <p>At Logos Church, you will find a Christ-centered community where people of all backgrounds are welcome. Together, we seek to grow in faith, encourage one another, and live out the good news of the kingdom of God.</p>
+
+    <p><strong>Senior Pastor:</strong> Pastor Daniel Kim</p>
+  </section>
+
+  <section id="ministries">
+    <h2>Our Ministries</h2>
+    <div class="ministries">
+      <div class="ministry">
+        <h3>Praise and Worship Team</h3>
+        <img src="images/praise1.jpg" alt="Praise Worship 1">
+        <img src="images/praise2.jpg" alt="Praise Worship 2">
+        <img src="images/praise3.jpg" alt="Praise Worship 3">
+      </div>
+      <div class="ministry">
+        <h3>Media and Tech Team</h3>
+        <img src="images/media1.jpg" alt="Media Team 1">
+        <img src="images/media2.jpg" alt="Media Team 2">
+        <img src="images/media3.jpg" alt="Media Team 3">
+      </div>
+      <div class="ministry">
+        <h3>Sunday School Ministry</h3>
+        <img src="images/sunday1.jpg" alt="Sunday School 1">
+        <img src="images/sunday2.jpg" alt="Sunday School 2">
+        <img src="images/sunday3.jpg" alt="Sunday School 3">
+      </div>
+      <div class="ministry">
+        <h3>Field Ministry</h3>
+        <p><em>Serving Daan Tubo, Ronas, Park 7, Bagong Silang, Morong, Bacolod, IloIlo</em></p>
+        <p><strong>C.E.M.S. Preschool:</strong> Located in Daan Tubo and Bagong Silang</p>
+        <img src="images/field1.jpg" alt="Field Ministry 1">
+        <img src="images/field2.jpg" alt="Field Ministry 2">
+        <img src="images/field3.jpg" alt="Field Ministry 3">
+      </div>
+    </div>
+  </section>
+
+  <section id="media">
+    <h2>Follow Us</h2>
+    <p>
+      📺 <a href="https://www.youtube.com/@logoschurchph" target="_blank">YouTube</a><br>
+      📘 <a href="https://www.facebook.com/logoschurchph" target="_blank">Facebook</a>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> Pinkviolet.rtc@gmail.com, philantioch@gmail.com</p>
+    <p><strong>Phone:</strong> 09564760301</p>
+    <p><strong>Address:</strong> 3rd Floor, Function Hall Parc Chateau Condominium, 1605 Onyx Rd, Ortigas Center, Pasig, 1605 Metro Manila</p>
+  </section>
+
+  <section id="services">
+    <h2>Worship Service Schedule</h2>
+    <ul>
+      <li><strong>Every Sunday</strong> – 9:00am – 10:00am | 1st Worship Service</li>
+      <li>10:00am – 11:00am | Korean Worship Service</li>
+      <li>10:00am – 11:00am | Sunday School</li>
+      <li>11:30am – 1:30pm | 2nd Worship Service</li>
+      <li><strong>Every Sunday</strong> – 7:00pm – 9:00pm | Night Worship Service (Daan Tubo Regional Church)</li>
+      <li><strong>Every Friday</strong> – 8:00pm – 9:30pm | Prayer Meeting</li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Logos Church. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
