@@ -69,28 +69,29 @@
     }
 
     /* Hero Section */
-    .hero {
-      background: url('church-bg.jpg') center/cover no-repeat, #fffbe6;
-      text-align: center;
-      padding: 100px 20px;
-      color: #3b2f2f;
-    }
-    .hero h1 {
-      font-size: 3.2em;
-      font-family: Clarendon, 'Merriweather', serif;
-      margin-bottom: 10px;
-      color: #8b7500;
-    }
-    .hero p {
-      font-size: 1.3em;
-      color: #3b2f2f;
-    }
-    .tagline {
-      font-size: 1.2em;
-      font-style: italic;
-      margin-top: 10px;
-      color: #6b4e00;
-    }
+   .hero::before {
+  content: "";
+  background: url("images/group-photo.png") center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25; /* Adjust opacity here */
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3.2em;
+  font-family: Clarendon, 'Merriweather', serif;
+  margin-bottom: 10px;
+  color: #8b7500;
+}
+
+.hero p {
+  font-size: 1.3em;
+  color: #3b2f2f;
+}
 
     /* Content wrapper with watermark */
     .content-with-logo {
@@ -347,6 +348,7 @@
 
 </body>
 </html>
+
 
 
 
