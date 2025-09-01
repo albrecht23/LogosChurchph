@@ -70,7 +70,7 @@
 
     /* Hero Section */
     .hero {
-      background: url('images/church-bg.jpg') center/cover no-repeat, #fffbe6;
+      background: url('church-bg.jpg') center/cover no-repeat, #fffbe6;
       text-align: center;
       padding: 100px 20px;
       color: #3b2f2f;
@@ -78,12 +78,18 @@
     .hero h1 {
       font-size: 3.2em;
       font-family: Clarendon, 'Merriweather', serif;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       color: #8b7500;
     }
     .hero p {
       font-size: 1.3em;
       color: #3b2f2f;
+    }
+    .tagline {
+      font-size: 1.2em;
+      font-style: italic;
+      margin-top: 10px;
+      color: #6b4e00;
     }
 
     /* Content wrapper with watermark */
@@ -95,7 +101,7 @@
 
     .content-with-logo::before {
       content: "";
-      background: url("./logo.png") no-repeat center top;
+      background: url("logo.png") no-repeat center top;
       background-size: 1700px;
       opacity: 0.1;
       position: absolute;
@@ -151,20 +157,20 @@
       margin-bottom: 12px;
     }
 
-    /* Contact Info */
-    #contact p {
-      margin: 5px 0;
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+      justify-content: center;
     }
-
-    /* Links in Media Section */
-    #media a {
-      color: #8b7500;
-      font-weight: bold;
-      text-decoration: none;
+    .social-icons a img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s ease;
     }
-    #media a:hover {
-      text-decoration: underline;
-      color: #b8860b;
+    .social-icons a img:hover {
+      transform: scale(1.1);
     }
 
     /* Footer */
@@ -187,8 +193,11 @@
   </div>
   <nav>
     <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#vision">Vision</a>
     <a href="#ministries">Ministries</a>
-    <a href="#media">Media</a>
+    <a href="#confession">Faith</a>
+    <a href="#follow">Follow Us</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -196,20 +205,28 @@
 <!-- Hero -->
 <div class="hero">
   <h1>Welcome to Logos Church</h1>
-  <p>A Christ-centered community of faith, worship, and service</p>
+  <p class="tagline">Rooted in God’s Word, Centered on Christ, Bearing Witness to the World.</p>
 </div>
 
 <!-- Content with watermark -->
 <div class="content-with-logo">
   <section id="about">
     <h2>About Us</h2>
-    <p>Logos Church is a non-denominational Presbyterian church. We believe and confess that Jesus is the Christ, the Son of the Living God, who died for our sins and rose again to give us eternal life. By grace alone, through Christ alone, we are saved—rescued from the power of sin, Satan, and separation from God. We hold firmly to the authority of God’s Word, the Bible, as our final standard of faith and life.</p>
-
-    <p>As a Presbyterian church, we value both sound doctrine and a living faith that is expressed through worship, prayer, discipleship, and service. Our desire is to glorify God by loving Him with all our heart, soul, mind, and strength, and by loving our neighbors as ourselves. We exist to proclaim the gospel, build up believers, and make disciples of Jesus Christ both locally and globally.</p>
-
-    <p>At Logos Church, you will find a Christ-centered community where people of all backgrounds are welcome. Together, we seek to grow in faith, encourage one another, and live out the good news of the kingdom of God.</p>
-
+    <p>We are a Reformed Presbyterian church joyfully committed to the faithful teaching of God’s Word, the reverent worship of His name, and the fellowship of believers united in Christ. Our foundation is the gospel of Jesus Christ, who calls us not only to believe but also to grow in holiness, becoming more like Him as we live by faith.</p>
+    <p>At the heart of our life together is worship—centered on the faithful preaching of Scripture and the right administration of the sacraments. Through prayer, song, and the ministry of the Word, we seek to glorify God and be shaped more and more into the image of His Son. We believe the church is a family in Christ, called to encourage, support, and care for one another as we walk together in faith.</p>
+    <p>We also believe the church is sent into the world. Rooted in the gospel, we proclaim Christ with conviction and compassion, bearing witness to Him in both word and deed. Our desire is to live holy lives that reflect the character of God and to bring the hope of Christ to our community and to the nations.</p>
+    <p>Whether you are exploring the Christian faith or seeking a church home, we warmly invite you to join us. Come and worship with us, grow with us, and walk with us as we follow Jesus Christ, our risen Lord and Savior.</p>
     <p><strong>Senior Pastor:</strong> Pastor Daniel Kim</p>
+  </section>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to glorify God by faithfully teaching His Word, worshiping Him in reverence and truth, nurturing a loving fellowship of believers, and proclaiming the gospel of Jesus Christ with conviction and compassion. We seek to grow in holiness and Christlikeness, living as His witnesses in our community and to the ends of the earth.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Our Vision</h2>
+    <p>Our vision is to be a Christ-centered church where God’s Word shapes every aspect of life, worship is offered with joy and reverence, and believers are equipped to live holy lives in the power of the Spirit. We long to see our congregation shine as a faithful witness to Christ, building up future generations in the gospel and extending the hope of salvation to all nations.</p>
   </section>
 
   <section id="ministries">
@@ -222,12 +239,6 @@
         <img src="images/praise3.jpg" alt="Praise Worship 3">
       </div>
       <div class="ministry">
-        <h3>Media and Tech Team</h3>
-        <img src="images/media1.jpg" alt="Media Team 1">
-        <img src="images/media2.jpg" alt="Media Team 2">
-        <img src="images/media3.jpg" alt="Media Team 3">
-      </div>
-      <div class="ministry">
         <h3>Sunday School Ministry</h3>
         <img src="images/sunday1.jpg" alt="Sunday School 1">
         <img src="images/sunday2.jpg" alt="Sunday School 2">
@@ -236,26 +247,84 @@
       <div class="ministry">
         <h3>Field Ministry</h3>
         <p><em>Serving Daan Tubo, Ronas, Park 7, Bagong Silang, Morong, Bacolod, IloIlo</em></p>
-        <p><strong>C.E.M.S. Preschool:</strong> Located in Daan Tubo and Bagong Silang</p>
         <img src="images/field1.jpg" alt="Field Ministry 1">
         <img src="images/field2.jpg" alt="Field Ministry 2">
         <img src="images/field3.jpg" alt="Field Ministry 3">
       </div>
+      <div class="ministry">
+        <h3>C.E.M.S. Preschool</h3>
+        <p><em>Located in Daan Tubo and Bagong Silang</em></p>
+        <img src="images/cems1.jpg" alt="Preschool 1">
+        <img src="images/cems2.jpg" alt="Preschool 2">
+      </div>
+      <div class="ministry">
+        <h3>Family Visitations</h3>
+        <img src="images/visit1.jpg" alt="Family Visitation 1">
+        <img src="images/visit2.jpg" alt="Family Visitation 2">
+      </div>
+      <div class="ministry">
+        <h3>Mission Trips</h3>
+        <p><em>Korean Missionaries / Bacolod Pastors / Iloilo Pastors</em></p>
+        <img src="images/mission1.jpg" alt="Mission Trip 1">
+        <img src="images/mission2.jpg" alt="Mission Trip 2">
+        <img src="images/mission3.jpg" alt="Mission Trip 3">
+      </div>
     </div>
   </section>
 
-  <section id="media">
-    <h2>Follow Us</h2>
-    <p>
-      📺 <a href="https://www.youtube.com/@logoschurchph" target="_blank">YouTube</a><br>
-      📘 <a href="https://www.facebook.com/logoschurchph" target="_blank">Facebook</a>
-    </p>
-  </section>
+  <section id="confession">
+  <h2>Our Statement of Faith</h2>
+  <p>
+    We are a Reformed Presbyterian church joyfully confessing the faith once delivered to the saints. Our convictions are rooted in the Word of God and faithfully summarized in the
+    <a href="https://share.google/lUhFIjDy8NQXnbaeA" target="_blank">Westminster Confession of Faith</a>.
+  </p>
+  <ol>
+    <li><strong>Scripture</strong><br>
+      We believe that the Holy Scriptures of the Old and New Testaments are the inspired, inerrant, and infallible Word of God. They are the complete and sufficient revelation of God’s will for salvation and life, and they are our only rule of faith and obedience. God speaks today through His written Word, which is fully authoritative and totally reliable.</li>
+
+    <li><strong>God and the Trinity</strong><br>
+      We believe in one living and true God, infinite in being and perfection, eternally existing in three Persons: Father, Son, and Holy Spirit. These three are one God, the same in substance, equal in power and glory. God is holy, wise, sovereign, and good, and He works all things according to the counsel of His will for His glory.</li>
+
+    <li><strong>Creation and Providence</strong><br>
+      We believe God created all things out of nothing by the word of His power, in the space of six days, and all very good. He continues to uphold, govern, and order all things by His wise and holy providence. Nothing happens by chance but according to His perfect plan, which is always for His glory and for the good of His people.</li>
+
+    <li><strong>Humanity and the Fall</strong><br>
+      We believe that man was created male and female in the image of God, with knowledge, righteousness, and holiness, to glorify and enjoy God. But in Adam’s disobedience, humanity fell into sin and guilt. As a result, all people are by nature dead in sin, unable to save themselves, and under God’s just judgment.</li>
+
+    <li><strong>Jesus Christ the Mediator</strong><br>
+      We believe that Jesus Christ, the eternal Son of God, became man without ceasing to be God. Conceived by the Holy Spirit and born of the virgin Mary, He lived a sinless life under the law of God. He offered Himself as a once-for-all sacrifice on the cross, bearing the penalty of sin and reconciling His people to God. On the third day, He rose bodily from the grave, ascended into heaven, and now reigns at the right hand of the Father as our Prophet, Priest, and King.</li>
+
+    <li><strong>Salvation by Grace</strong><br>
+      We believe that salvation is entirely the work of God’s free grace. From all eternity, God chose a people for Himself in Christ. Those whom the Father has chosen, the Son has redeemed, and the Spirit calls and sanctifies. Sinners are justified by grace alone, through faith alone, in Christ alone—clothed in the righteousness of Christ and forgiven of all sin. True faith produces good works, not as the ground of salvation but as its fruit and evidence.</li>
+
+    <li><strong>The Church</strong><br>
+      We believe that the Lord Jesus Christ is the head of the church, which is His body. The universal church consists of all those throughout the world and throughout history who are united to Christ by faith. The visible church is the gathering of believers and their children, called to worship God, hear His Word, receive His sacraments, and live in fellowship together. Christ has given the church the ministry of Word and sacrament, the offices of elder and deacon, and the discipline necessary for its purity and peace.</li>
+
+    <li><strong>Worship and the Means of Grace</strong><br>
+      We believe that God alone determines how He is to be worshiped, and He calls His people to worship Him in spirit and in truth, with reverence and joy. The ordinary means of grace by which God builds up His church are the preaching of the Word, the right administration of the sacraments of Baptism and the Lord’s Supper, and prayer. Through these means, the Holy Spirit works faith, strengthens believers, and draws us into deeper communion with Christ.</li>
+
+    <li><strong>Christian Living</strong><br>
+      We believe that those who are united to Christ are called to live holy lives, walking in obedience to God’s commands. This is not in our own strength but through the power of the Holy Spirit, who sanctifies us day by day. We are called to love God and neighbor, to pursue justice and mercy, to forgive as we have been forgiven, and to bear witness to Christ in every sphere of life.</li>
+
+    <li><strong>Last Things</strong><br>
+      We believe that Jesus Christ will return in power and glory to judge the living and the dead. The righteous in Christ will be raised to everlasting life in the presence of God, while the wicked will be raised to everlasting judgment. We look forward with hope to the new heavens and the new earth, where righteousness dwells, and where we will glorify and enjoy God forever.</li>
+
+    <li><strong>God’s Glory and Our Joy</strong><br>
+      We believe that in all things, our chief end is to glorify God and to enjoy Him forever.</li>
+  </ol>
+
+  <h3>The Apostles’ Creed</h3> <a href="https://www.crcna.org/welcome/beliefs/creeds/apostles-creed" target="_blank">Apostles’ Creed</a>:
+  <p>I believe in God, the Father almighty, creator of heaven and earth.<br>
+     I believe in Jesus Christ, His only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; He descended to the dead. On the third day He rose again; He ascended into heaven, He is seated at the right hand of the Father, and He will come again to judge the living and the dead.<br>
+     I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.</p>
+</section>
+
+ <section id="media"> <h2>Follow Us</h2> <p> 📺 <a href="https://www.youtube.com/@logoschurchph" target="_blank">YouTube</a><br> 📘 <a href="https://www.facebook.com/logoschurchph" target="_blank">Facebook</a> </p> </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p><strong>Email:</strong> Pinkviolet.rtc@gmail.com, philantioch@gmail.com</p>
-    <p><strong>Phone:</strong> 09564760301</p>
+    <p><strong>Email:</strong> Pinkviolet.rtc@gmail.com or philantioch@gmail.com</p>
+    <p><strong>Phone:</strong> 09*********</p>
     <p><strong>Address:</strong> 3rd Floor, Function Hall Parc Chateau Condominium, 1605 Onyx Rd, Ortigas Center, Pasig, 1605 Metro Manila</p>
   </section>
 
@@ -278,4 +347,6 @@
 
 </body>
 </html>
+
+
 
